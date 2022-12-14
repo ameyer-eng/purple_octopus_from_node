@@ -99,6 +99,11 @@ class Octopus {
             break;
     }
   }
+
+  function move_up()
+  {
+    myOctopus.moveUp();
+  }
   
 
 class Bubble{
@@ -161,9 +166,9 @@ class Airstone{
 
 
 let myOctopus = new Octopus(100, 100);
-let myAirstone = new Airstone(500, 600);
-let myAirstone1 = new Airstone(800, 600);
-let myAirstone2 = new Airstone(1000, 600);
+let myAirstone = new Airstone(150, 600);
+let myAirstone1 = new Airstone(300, 600);
+let myAirstone2 = new Airstone(400, 600);
 
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -180,7 +185,7 @@ function Update()
       ctx.fillRect(0, 0, c.width, c.height);
 
     //DRAW BACKGROUND FIRST
-        var grd = ctx.createRadialGradient(75,50,5,100,60,800);
+        var grd = ctx.createRadialGradient(75,50,5,100,60,600);
         grd.addColorStop(0,"#99ffff");
         grd.addColorStop(0.5, "teal");
         grd.addColorStop(0.75,"#004d00");

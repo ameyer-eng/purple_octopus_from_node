@@ -10,7 +10,16 @@
     h4{color:rgb(4, 167, 243); text-align: center;}
 
     p{font-family: verdana; font-size: 20px;}
-    canvas{padding: 0; margin: auto;  display: block;}
+    canvas{padding: 0; margin-left: auto; margin-right:auto; display: block;}
+
+    .buttons{
+        max-width: 600px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 5px;
+
+    }
+
     
 </style>    
 </head>
@@ -18,18 +27,10 @@
 
 <canvas id="myCanvas" width="550" height="600" style="border:1px solid #d3d3d3;">
 Your browser does not support the HTML5 canvas tag.</canvas>
+<div class = "buttons">
+    <button type="button" style="display:block; margin 0 auto;" onclick="move_up()">Up</button>  
+</div>
 
-<h1>Hello!</h1>
-
-<h2>These bubbles are interesting because they all have the same spatial frequency of motion.</h2>
-
-<h3>Did you know bubbles can make shockwaves?</h3>
-
-<h4>Search "The Inner World of a Collapsing Bubble on YouTube. You will find a video of a bubble Collapsing
-   at 1,000,000 frames per second. It is good to learn about bubbles.  
-</h4>
-
-<h1>Physics is just a set of rules we all agree on with math?</h1>
 
 <script src="js/purple.js"></script>
 
