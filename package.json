@@ -1,0 +1,14 @@
+{
+  "name": "purple_octopus_from_node",
+  "version": "1.0.0",
+  "description": "trying to host purple octopus game from node",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Aaron",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
