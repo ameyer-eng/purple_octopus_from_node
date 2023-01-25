@@ -1,25 +1,31 @@
-//maybe a bad idea....global array?
-
-//      [["flag", "flag", "flag", "flag",],[timestamp, timestamp, timestamp, timestamp]]
-//    Game "state" vs time......  or Events vs time...
-//    allow t+1 actions and events to refer to t-1, t-2....t-n  AKTIONS....
-//    t-1 could refer to t- 100 or something
-//    it could give the game a sense of "memory"
-
-//   I don't think a true random number would be time stable.  In the sense that reversing the action should generate a different number.
-//   If t+1 transistions to t+2 then it could give 5 and the reverse transition would give 2 for example
-
-//  So can true randomness actually exist in physics.  That is if I have a true "random" number generator that obeys the laws of the physical world
-//  Such as the state of gas particles from the transistion of a regular crystal lattice....
-//  Like a detonation...
-//  Can it be reversed if we reverse time?
-//  Entropy is such an odd concept. 
 
 
-//stuph to setup the KANVAS
+
+  
+
+  
+
 var c = document.getElementById("myCanvas");
 var ctx = c.getContext("2d");
 
+    // resize the canvas to fill browser window dynamically
+    window.addEventListener('resize', resizeCanvas, false);
+
+    function resizeCanvas() {
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+    
+        /**
+         * Your drawings need to be inside this function otherwise they will be reset when 
+         * you resize the browser window and the canvas goes will be cleared.
+         */
+        drawStuff();
+      }
+      resizeCanvas();
+    
+      function drawStuff() {
+        // do your drawing stuff here
+      }
 
 class Octopus {
     constructor(x_origin, y_origin) {
@@ -100,10 +106,7 @@ class Octopus {
     }
   }
 
-  function move_up()
-  {
-    myOctopus.moveUp();
-  }
+
   
 
 class Bubble{
